@@ -43,7 +43,7 @@ export class App extends Component {
         (i.name === contact.name.toLowerCase() &&
           i.number === contact.number) ||
         i.number === contact.number
-    )
+    );
     enterContacts
       ? alert(`${name} or ${number} is already in contacts`)
       : this.setState(({ contacts }) => ({
